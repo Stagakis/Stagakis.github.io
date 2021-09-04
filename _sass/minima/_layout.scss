@@ -65,6 +65,10 @@
 	height: calc(var(--div-width) * 9 / 16);
 }
 
+.logo{
+	height: 70px;
+}
+
 .figcaption {
   @include relative-font-size(0.8);
 }
@@ -110,6 +114,10 @@
     &:not(:last-child) {
       margin-right: 20px;
     }
+  }
+
+  .page-link:hover {
+    background: #9fbada;
   }
 
   @include media-query($on-palm) {
