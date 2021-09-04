@@ -4,27 +4,22 @@ title: Tutorials
 permalink: /tutorials/
 ---
 
-
-  <!-- Render regular posts. -->
-  
-  {%- if site.posts.size > 0 -%}
-  <div> 
+<!-- Render regular posts. -->  
+{%- if site.posts.size > 0 -%}
     <ul class="post-list myDiv">
-      {%- for post in site.posts -%}
-      <li>
+        {%- for post in site.posts -%}
+        <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+            <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
-          </a>
+            </a>
         </h3>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+            {{ post.excerpt }}
         {%- endif -%}
-      </li>
-      {%- endfor -%}
+        </li>
+        {%- endfor -%}
     </ul>
-  </div>
-  {%- endif -%}
-  
+{%- endif -%}
