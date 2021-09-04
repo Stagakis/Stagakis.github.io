@@ -8,7 +8,6 @@ permalink: /projects/
 <!-- Render Projects. -->  
   {%- if site.projects.size > 0 -%}
   <div>
-    <h2 class="post-list-heading">{{ page.list_title | default: "Recent Projects..." }} <a href="{{ hahaha }}">see all</a></h2>
     <ul class="post-list myDiv">
       {%- for post in site.projects -%}
       <li>
