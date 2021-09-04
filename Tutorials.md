@@ -5,9 +5,9 @@ permalink: /tutorials/
 ---
 
 <!-- Render regular posts. -->  
-{%- if site.posts.size > 0 -%}
+{%- if site.tutorials.size > 0 -%}
     <ul class="post-list myDiv">
-        {%- for post in site.posts -%}
+        {%- for post in site.tutorials -%}
         <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
