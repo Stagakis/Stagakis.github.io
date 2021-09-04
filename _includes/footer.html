@@ -3,19 +3,21 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <h2 class="footer-heading"></h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li class="p-name">
-            </li>
-            {%- if site.author -%}
-            {{ site.author | escape }}
-            {%- endif -%}
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
+            Contact Me at:</li>
+
+          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {%- if site.author -%}
+          {{ site.author | escape }}
+          {%- endif -%}
+          {%- if site.email -%}
+          
+          {%- endif -%}
 
             <!-- <li><p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p></li> -->            
         </ul>
@@ -23,8 +25,15 @@
       </div>
 
       <div class="footer-col footer-col-2">
+        <img alt="" src="/images/stagvision.png" width="200px" height="200px"></img>      
+      </div>
+
+      <div class="footer-col footer-col-3">
         <p>{{- site.footer_description | escape -}}</p>
       </div>
+
+
+
     </div>
 
   </div>
