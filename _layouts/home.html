@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  
+  <!-- Render Projects. -->  
+  {%- if site.projects.size > 0 -%}
+  <div>
+    <h2 class="post-list-heading">{{ page.list_title | default: "Recent Projects..." }} <a href="{{ hahaha }}">see all</a></h2>
+    <ul class="post-list myDiv">
+      {%- for post in site.projects -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <figure class="figure">
+          <a href="{{ post.url | relative_url }}">
+            <img class="thumbnail" border="2" alt="" src="{{ post.image_file }}"></a>      
+          <figcaption class="figcaption">
+            {{ post.title | escape }}
+            <p class="post-meta">{{ post.date | date: date_format }}</p>
+          </figcaption>
+        </figure>
+
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  {%- endif -%}
+  
+
+  <!-- Render regular posts. -->
+  
+  {%- if site.posts.size > 0 -%}
+  <div> 
+    <h2 class="post-list-heading">{{ page.list_title | default: "Recent Tutorials..." }} <a href="{{ hahaha }}">see all</a></h2>
+    <ul class="post-list myDiv">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  {%- endif -%}
+  
+
+  
+</div>

@@ -1,0 +1,51 @@
+I"<ul class="post-list">
+<!-- Render Projects. --><div>
+    <h2 class="post-list-heading">Recent Projects... <a href="">see all</a></h2>
+    <ul class="post-list myDiv"><li><figure class="figure">
+          <a href="/projects/2016-05-19-test-project.html">
+            <img class="thumbnail" border="2" alt="" src="images/string_art.png" /></a>      
+          <figcaption class="figcaption">
+            String art using genetic algorithms
+            <p class="post-meta">May 19, 2016</p>
+          </figcaption>
+        </figure>
+
+      </li><li><figure class="figure">
+          <a href="/projects/2016-05-19-test-project2.html">
+            <img class="thumbnail" border="2" alt="" src="images/string_art.png" /></a>      
+          <figcaption class="figcaption">
+            String art using genetic algorithms
+            <p class="post-meta">May 19, 2016</p>
+          </figcaption>
+        </figure>
+
+      </li><li><figure class="figure">
+          <a href="/projects/2016-05-19-test-project3.html">
+            <img class="thumbnail" border="2" alt="" src="images/string_art.png" /></a>      
+          <figcaption class="figcaption">
+            String art using genetic algorithms
+            <p class="post-meta">May 19, 2016</p>
+          </figcaption>
+        </figure>
+
+      </li><li><figure class="figure">
+          <a href="/projects/2016-05-19-test-project4.html">
+            <img class="thumbnail" border="2" alt="" src="images/string_art.png" /></a>      
+          <figcaption class="figcaption">
+            String art using genetic algorithms
+            <p class="post-meta">May 19, 2016</p>
+          </figcaption>
+        </figure>
+
+      </li><li><figure class="figure">
+          <a href="/projects/2016-05-19-test-project5.html">
+            <img class="thumbnail" border="2" alt="" src="images/string_art.png" /></a>      
+          <figcaption class="figcaption">
+            String art using genetic algorithms
+            <p class="post-meta">May 19, 2016</p>
+          </figcaption>
+        </figure>
+
+      </li></ul>
+  </div></ul>
+:ET
